@@ -6,5 +6,12 @@ module.exports = merge(common, {
   devtool: "inline-source-map",
   devServer: {
     static: "./dist",
+    historyApiFallback: {
+      rewrites: [
+        { from: /^\/$/, to: "/home.html" },
+        { from: /^\/dropdown-menu.html/, to: "/dropdown-menu.html" },
+        { from: /^\/image-carousel.html/, to: "/image-carousel.html" },
+      ],
+    },
   },
 });
