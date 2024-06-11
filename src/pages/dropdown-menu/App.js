@@ -1,15 +1,15 @@
-import Header from "../../components/header/Header";
-import Image from "../../assets/images/songoku.jpg";
+import Header from '../../components/header/Header';
+import Image from '../../assets/images/songoku.jpg';
 
 export default function () {
-  document.documentElement.addEventListener("click", (e) => {
-    const userImg = document.querySelector(".user-image");
+  document.documentElement.addEventListener('click', (e) => {
+    const userImg = document.querySelector('.user-image');
     if (!userImg.contains(e.target)){
-      userImg.classList.remove("active");
+      userImg.classList.remove('active');
     }
   });
   return `
-  ${Header({ heading: "Dropdown Menu" })}
+  ${Header({ heading: 'Dropdown Menu' })}
     <a href="home.html">Home</a>
     
     <div class="dropdown-container">

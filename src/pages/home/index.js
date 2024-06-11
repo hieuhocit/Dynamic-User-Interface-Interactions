@@ -1,4 +1,4 @@
-import "../../styles/home.css";
-import App from "./App";
+import '../../styles/home.css';
+import App from './App';
 
-document.querySelector("#app").innerHTML = App();
+document.querySelector('#app').innerHTML = App();
